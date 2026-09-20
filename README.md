@@ -24,11 +24,13 @@ SignFlow/
 
 ## Current Status
 
+**Completed as a university course project (Oct 2024 – Feb 2025); not actively maintained since.** The code and known limitations below are left as-is from that point, rather than updated retroactively.
+
 The trained model and the working recognition scripts (`gui.py`, `test_model.py`) classify the 24 **static** letters of the alphabet (J and Z are excluded, since they require hand motion rather than a single hand shape).
 
 Separate image sequences for **J** and **Z** were collected (`data/J_frames`, `data/Z_frames`, `dataHareketli/`, including augmented variants), with the intent of eventually supporting these two dynamic gestures. That integration was not completed — the dynamic-gesture data exists in the repository, but the trained model and deployed scripts do not use it.
 
-Accuracy was assessed by observing predictions during live testing rather than through a logged/benchmarked evaluation run, so no specific accuracy figure is reported here.
+Accuracy was assessed by observing predictions during live testing rather than through a logged/benchmarked evaluation run: across repeated live tests, the model correctly recognized letters roughly 90%+ of the time. No formal train/val/test benchmark was run, so treat this as an informal, observed figure rather than a measured metric.
 
 ## Technical Details
 - **Framework:** TensorFlow / Keras
