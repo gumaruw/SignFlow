@@ -1,4 +1,4 @@
-# SignFlow | Sign Language Alphabet Recognition
+# SignFlow — Sign Language Alphabet Recognition
 
 ## Overview
 
